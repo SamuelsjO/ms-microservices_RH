@@ -20,11 +20,20 @@ import com.stecnology.hrworker.repositories.WorkerRepository;
 public class WorkResource {
 
 	private static Logger logger = LoggerFactory.getLogger(WorkResource.class);
+	
 	@Autowired
 	private Environment env;
 	
 	@Autowired
 	private WorkerRepository repository;
+	
+	
+	@GetMapping(value = "/configs")
+	public ResponseEntity<Void> getConfig(){
+		logger.info("CONFIG = " + env.getProperty("test.config"));
+		return ResponseEntity.noContent().build();
+	}
+	
 	
 	@GetMapping
 	public ResponseEntity<List<Worker>> findAll(){
