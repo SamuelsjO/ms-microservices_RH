@@ -1,12 +1,43 @@
 # ms-microservices_RH
-	microservices Human resources
-
-	Project architecture
+	microservices Human resources, API REST com Spring Boot e Java 11
+	
+	Feign para requisições de API entre microsserviços
+	
+	Ribbon para balanceamento de carga
+	
+	Servidor Eureka para registro dos microsserviços
+	
+	API Gateway Zuul para roteamento e autorização
+	
+	Hystrix para tolerância a falhas
+	
+	OAuth e JWT para autenticação e autorização
+	
+	Servidor de configuração centralizada com dados em repositório Git
+	
+	Geração de containers Docker para os microsserviços e bases de dado, fazer melhorias com docker-compose
+	
+#Rotas da API
+    porta:8765 referente api-gateway
+    oauth:
+       POST:
+    	/hr-oauth/oauth/token
+    	
+    	
+       GET:
+       busca por email
+       /hr-oauth/users/search?{email para busca}
+	----------------------------------------------------------------------------------------------------------
+#Project architecture 
 
 ![arquitetura](https://user-images.githubusercontent.com/28466117/139351069-ef5eb8c4-6fe8-4316-9811-4008596fc14c.png)
 
 
-# Criar rede docker para sistema hr
+    -----------------------------------------------------------------------------------------------------------
+##CRIANDO CONTAINER DOCKER A PARTIR DE COMANDOS
+
+
+#Criar rede docker para sistema hr
 
     docker network create hr-net
 
@@ -117,6 +148,11 @@
 	docker build -t hr-api-gateway-zuul:v1 .
 	
 	docker run -p 8765:8765 --name hr-api-gateway-zuul --network hr-net hr-api-gateway-zuul:v1
+
+
+#Melhorias com docker-compose
+  
+	proximo passo ...
 
 	
 	
