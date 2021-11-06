@@ -29,12 +29,12 @@
 ![oauth](https://user-images.githubusercontent.com/28466117/140620536-e6c03b12-3638-48b1-8392-c97e5d74b42b.png)
 
 	 response:
-	 
-	 
-    	
+![oauth3](https://user-images.githubusercontent.com/28466117/140620612-5a8ef8b0-c474-43fe-ab3f-30efbaa9b7f4.png)
+
+
        GET:
        busca por email
-       /hr-oauth/users/search?{email para busca}
+       /hr-oauth/users/search?email=leia@gmail.com
 	----------------------------------------------------------------------------------------------------------
 #Project architecture 
 
