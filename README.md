@@ -19,9 +19,11 @@
 	
 #Rotas da API
 
-    porta:8765 referente api-gateway
+    porta:localhost:8765 referente api-gateway
+    
+    ----------------------------------------------------------------------------------------------------------
     usuario e senha fictício
-    oauth:
+    hr-oauth:
        POST:
     	/hr-oauth/oauth/token
 	
@@ -33,9 +35,21 @@
 
 
        GET:
-       busca por email
+       busca usuario por email
        /hr-oauth/users/search?email=leia@gmail.com
-	----------------------------------------------------------------------------------------------------------
+     ----------------------------------------------------------------------------------------------------------
+     
+     
+     
+     hr-user
+       GET:
+       busca usuario por ID
+       /hr-user/users/1
+       
+       GET:
+       busca usuario por email
+       /hr-user/users/search?email=leia@gmail.com
+     
 #Project architecture 
 
 ![arquitetura](https://user-images.githubusercontent.com/28466117/139351069-ef5eb8c4-6fe8-4316-9811-4008596fc14c.png)
