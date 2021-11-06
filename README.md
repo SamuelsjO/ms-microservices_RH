@@ -34,6 +34,16 @@
 ![oauth3](https://user-images.githubusercontent.com/28466117/140620612-5a8ef8b0-c474-43fe-ab3f-30efbaa9b7f4.png)
 
 
+
+
+----------------------------------------------------------------------------------------------------------------
+#Configurando token para acesso a rotas
+
+![token](https://user-images.githubusercontent.com/28466117/140621327-c4a4781e-958e-49ee-b042-531a42a5c4ac.png)
+
+----------------------------------------------------------------------------------------------------------------
+
+
        GET:
        busca usuario por email
        /hr-oauth/users/search?email=leia@gmail.com
