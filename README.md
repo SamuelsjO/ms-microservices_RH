@@ -24,7 +24,10 @@
     oauth:
        POST:
     	/hr-oauth/oauth/token
-    	
+    	![oauth](https://user-images.githubusercontent.com/28466117/140620414-4427bc13-7d7d-4763-8984-eabb61fcc7b0.png)
+        ![oauth2](https://user-images.githubusercontent.com/28466117/140620416-3bc6ee02-963b-4de0-b4ef-4b86973c7134.png)
+
+	 
     	
        GET:
        busca por email
