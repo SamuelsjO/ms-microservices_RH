@@ -37,9 +37,7 @@
        GET:
        busca usuario por email
        /hr-oauth/users/search?email=leia@gmail.com
-     ----------------------------------------------------------------------------------------------------------
-     
-     
+    
      
      hr-user
        GET:
@@ -49,6 +47,43 @@
        GET:
        busca usuario por email
        /hr-user/users/search?email=leia@gmail.com
+     
+     hr-payroll
+       GET:
+       calculo de pagamento com base nos dias trabalhado
+       /hr-payroll/payments/{workid}/days/{days}
+     
+     hr-worker
+        GET:
+        Busca trabalhador por {id}
+        /hr-worker/workers/{id}
+        
+        GET:  
+        Busca todos trabalhadores cadastrado na base
+        /hr-worker/workers
+        
+    Actuator:
+      POST:
+      Atualiza as configuraçoes em runtime
+      /hr-worker/actuator/refresh
+      
+    
+    --------------------------------------------------------------------------------------------------------------  
+    hr-config-server
+    
+    porta: localhost:8888, porta de configuraçao de servidor
+       GET:
+       hr-worker configs default profile
+       /hr-worker/default
+       
+       hr-worker configs test profile
+       /hr-worker/test
+       
+       hr-worker configs on console
+       /hr-worker/workers/configs
+    
+    
+    
      
 #Project architecture 
 
