@@ -1,4 +1,9 @@
 # ms-microservices_RH
+
+# Project architecture 
+
+![arquitetura](https://user-images.githubusercontent.com/28466117/139351069-ef5eb8c4-6fe8-4316-9811-4008596fc14c.png)
+
 	microservices Human resources, API REST com Spring Boot e Java 11
 	
 	Feign para requisições de API entre microsserviços
@@ -91,13 +96,7 @@
        
        hr-worker configs on console
        /hr-worker/workers/configs
-    
-    
-    
-     
-# Project architecture 
-
-![arquitetura](https://user-images.githubusercontent.com/28466117/139351069-ef5eb8c4-6fe8-4316-9811-4008596fc14c.png)
+   
 
 
     -----------------------------------------------------------------------------------------------------------
