@@ -18,7 +18,9 @@
 	Geração de containers Docker para os microsserviços e bases de dado, fazer melhorias com docker-compose
 	
 #Rotas da API
+
     porta:8765 referente api-gateway
+    
     oauth:
        POST:
     	/hr-oauth/oauth/token
