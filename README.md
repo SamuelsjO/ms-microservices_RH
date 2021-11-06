@@ -17,7 +17,7 @@
 	
 	Geração de containers Docker para os microsserviços e bases de dado, fazer melhorias com docker-compose
 	
-#Rotas da API
+# Rotas da API
 
     porta:localhost:8765 referente api-gateway
     
@@ -37,7 +37,7 @@
 
 
 ----------------------------------------------------------------------------------------------------------------
-#Configurando token para acesso a rotas
+# Configurando token para acesso a rotas
 
 ![token](https://user-images.githubusercontent.com/28466117/140621327-c4a4781e-958e-49ee-b042-531a42a5c4ac.png)
 
@@ -95,16 +95,16 @@
     
     
      
-#Project architecture 
+# Project architecture 
 
 ![arquitetura](https://user-images.githubusercontent.com/28466117/139351069-ef5eb8c4-6fe8-4316-9811-4008596fc14c.png)
 
 
     -----------------------------------------------------------------------------------------------------------
-##CRIANDO CONTAINER DOCKER A PARTIR DE COMANDOS
+## CRIANDO CONTAINER DOCKER A PARTIR DE COMANDOS
 
 
-#Criar rede docker para sistema hr
+# Criar rede docker para sistema hr
 
     docker network create hr-net
 
@@ -116,7 +116,7 @@
 
 	docker run -p 5432:5432 --name hr-user-pg12 --network hr-net -e POSTGRES_PASSWORD=1234567 -e POSTGRES_DB=db_hr_user -d -p postgres:12-alpine
 
-#hr-config-server
+# hr-config-server
 
 	FROM openjdk:11
 	VOLUME /tmp
@@ -133,7 +133,7 @@
 	
 	GITHUB_USER={user} e GITHUB_PASS={password}, se o github for privado deverá infomar o user e password
 	
-#hr-eureka-server
+# hr-eureka-server
 
     FROM openjdk:11
     VOLUME /tmp
@@ -148,7 +148,7 @@
 
     docker run -p 8761:8761 --name hr-eureka-server --network hr-net hr-eureka-server:v1
 	
-#hr-worker
+# hr-worker
  
 	FROM openjdk:11
 	VOLUME /tmp
@@ -162,7 +162,7 @@
 	
 	docker run -P --network hr-net hr-worker:v1
 	
-#hr-user
+# hr-user
 
 	FROM openjdk:11
 	VOLUME /tmp
@@ -175,7 +175,7 @@
 	
 	docker run -P --network hr-net hr-user:v1
 
-#hr-payroll
+# hr-payroll
 
 	FROM openjdk:11
 	VOLUME /tmp
@@ -188,7 +188,7 @@
 	
 	docker run -P --network hr-net hr-payroll:v1
 
-#hr-oauth
+# hr-oauth
 
 	FROM openjdk:11
 	VOLUME /tmp
@@ -201,7 +201,7 @@
 	
 	docker run -P --network hr-net hr-oauth:v1,
 	
-#hr-api-gateway-zuul
+# hr-api-gateway-zuul
 
 	FROM openjdk:11
 	VOLUME /tmp
@@ -217,7 +217,7 @@
 	docker run -p 8765:8765 --name hr-api-gateway-zuul --network hr-net hr-api-gateway-zuul:v1
 
 
-#Melhorias com docker-compose
+# Melhorias com docker-compose
   
 	proximo passo ...
 
