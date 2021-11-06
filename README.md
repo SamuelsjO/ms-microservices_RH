@@ -20,13 +20,16 @@
 #Rotas da API
 
     porta:8765 referente api-gateway
-    
+    usuario e senha fictício
     oauth:
        POST:
     	/hr-oauth/oauth/token
-    	![oauth](https://user-images.githubusercontent.com/28466117/140620414-4427bc13-7d7d-4763-8984-eabb61fcc7b0.png)
-        ![oauth2](https://user-images.githubusercontent.com/28466117/140620416-3bc6ee02-963b-4de0-b4ef-4b86973c7134.png)
+	
+![oauth2](https://user-images.githubusercontent.com/28466117/140620535-3bb1367d-a758-4f3f-a4c6-49ca70dee0be.png)
+![oauth](https://user-images.githubusercontent.com/28466117/140620536-e6c03b12-3638-48b1-8392-c97e5d74b42b.png)
 
+	 response:
+	 
 	 
     	
        GET:
