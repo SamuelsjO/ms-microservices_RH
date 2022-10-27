@@ -57,6 +57,7 @@ public class ResourceServeConfig extends ResourceServerConfigurerAdapter {
 		return source;
 	}
 
+
 	@Bean
 	public FilterRegistrationBean<CorsFilter> corsFilter() {
 		FilterRegistrationBean<CorsFilter> bean = new FilterRegistrationBean<>(new CorsFilter(configurationSource()));
